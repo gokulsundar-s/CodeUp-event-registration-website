@@ -1,0 +1,112 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: sans-serif;
+    background-image: url("/Frontend/Sources/bg.svg");
+    color: rgb(30, 30, 30);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #999; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #777; 
+}
+
+.top-container{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+
+.college-logo{
+    height: 100px;
+    width: auto;
+}
+
+.home-container{
+    text-align: center;
+}
+
+.code-up{
+    font-family: "Archivo";
+    font-size: 80px;
+    font-weight: 900;
+    margin: 0;
+    padding-top: 50px;
+    background: linear-gradient(#d14278,#591952, #3c1e5e);
+    background-clip: text;
+    color: transparent;
+}
+
+
+.event-container h1{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.event-box{
+    text-align: center;
+    padding: 30px;
+    display: block;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #00000020;
+    margin: 0px 70px;
+    margin-bottom: 50px;
+}
+
+.event-box p{
+    line-height: 35px;
+}
+.event-button-container{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.event-button{
+    cursor: pointer;
+    font-size: 20px;
+    background-color: transparent;
+    color: #591952;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.register-button{
+    font-size: 15px;
+    color: #fff;
+    background-color: #591952;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.register-button:hover{
+    opacity: 0.9;
+}
+
+.query-container{
+    padding: 30px 0px;
+    text-align: center;
+}
+
+.footer-container{
+    text-align: center;
+    color: #591952;
+}

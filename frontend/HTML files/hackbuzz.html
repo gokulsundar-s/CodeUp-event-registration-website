@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Register - Hack Buzz</title>
+    <link rel="icon" type="image/x-icon" href="/Frontend/Sources/CCC-Logo.png">
+    <link href='https://fonts.googleapis.com/css?family=Archivo' rel='stylesheet'>
+    <link rel="stylesheet" href="/Frontend/Styling/events.css">
+    <script src="/backend/server.js"></script>
+</head>
+
+<body>
+    <div class="information-container">
+        <h1>Hack Buzz</h1>
+        <p>Hackbuzz is a web development round. It must contain a structured UI. The evaluation will be made based on the number of modules completed. Extra bonus point if DB connection is made.</p>
+        <p><b>Team size:</b> 2 members</p>
+        <p><b>Timing :</b> 08:45 AM to 04:30 PM</p>
+        <p class = red-line><b>Participants registering for this event will not be allowed to attend other three events.</b></p>
+    </div>
+    
+    <form class = "form-container" name="hackbuzz-form">
+        <h3>Fill the form to participate</h4>
+        <div class = "input-field">
+            <p><b>Team name</b></p>
+            <input type="text" placeholder="Team name" name="team">
+        </div>
+        <div class = "input-field">
+            <p><b>Name of the team lead</b></p>
+            <input type="text" placeholder="Name">
+        </div>
+        <div class = "input-field">
+            <p><b>Roll number of the team lead</b></p>
+            <input type="text" placeholder="Roll number">
+        </div>
+        <div class = "input-field">
+            <div class = "input-field">
+                <p><b>Class of the team lead</b></p>
+                <Select type = "text">
+                    <option>Class</option>
+                    <option>II - A</option>
+                    <option>II - B</option>
+                    <option>II - C</option>
+                    <option>II - D</option>
+                </Select>
+            </div>
+            <p><b>Mail ID of the team lead</b></p>
+            <input type="mail" placeholder="kongu.edu Mail ID">
+        </div>
+        <div class = "input-field">
+            <p><b>Phone number of the team lead</b></p>
+            <input type="tele" placeholder="Phone number">
+        </div>
+        <div class = "input-field">
+            <p><b>Name of the team member</b></p>
+            <input type="text" placeholder="Name">
+        </div>
+        <div class = "input-field">
+            <p><b>Roll number of the team member</b></p>
+            <input type="text" placeholder="Roll number">
+        </div>
+        <div class = "input-field">
+            <p><b>Class of the team member</b></p>
+            <Select type = "text">
+                <option>Class</option>
+                <option>II - A</option>
+                <option>II - B</option>
+                <option>II - C</option>
+                <option>II - D</option>
+            </Select>
+        </div>
+        <div class = "input-field">
+            <p><b>Mail ID of the team member</b></p>
+            <input type="mail" placeholder="kongu.edu Mail ID">
+        </div>
+        <div class = "input-field">
+            <p><b>Phone number of the team member</b></p>
+            <input type="tele" placeholder="Phone number">
+        </div>
+        <div class = "button-field">
+            <button type="submit" value="Submit" onclick="event1()"><b>Submit</b></button>
+        </div>
+    </form>
+
+    <div class = query-container>
+        <h2>For any queries contact event co-ordinators</h2>
+        <h4>Name 1 : 1234567890</h4>
+        <h4>Name 2 : 1234567890</h4>
+    </div>
+
+    <div class = "footer-container">
+        <p>&#169; All rights reserved | CSE Coding Club</p>
+    </div>
+</body>
