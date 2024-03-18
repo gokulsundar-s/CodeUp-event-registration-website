@@ -21,31 +21,12 @@ body{
     color: rgb(67, 67, 67);
 }
 
-svg{
-    height: 1rem;
-}
-
 .information-container{
     text-align: center;
-    padding: 0px 30px;
-    line-height: 40px;
+    padding-bottom: 2rem;
 }
 
-.information-container a{
-    text-decoration: none;
-}
-
-.information-container h1{
-    color: rgb(67,67,67);
-}
-
-.red-line{
-    color: red;
-    padding: 20px 0px;
-    font-size: 15px;
-}
-
-.form-container{
+.login-container{
     font-family: "alata";
     text-align: center;
     display: block;
@@ -71,17 +52,6 @@ svg{
     border-radius: 5px;
 }
 
-.input-field select{
-    font-family: "alata";
-    width: 100%;
-    height: 40px;
-    text-align: center;
-    border-color: #592952;
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 5px;
-}
-
 .button-field{
     padding-top: 30px;
 }
@@ -100,7 +70,11 @@ svg{
     opacity: 0.9;
 }
 
-.footer-container{
-    text-align: center;
-    padding-top: 3rem;   
+.signup-link{
+    padding-top: 2rem;
+    font-size: 0.95rem;
 }
+
+.signup-link a{
+    text-decoration: none;
+} 
