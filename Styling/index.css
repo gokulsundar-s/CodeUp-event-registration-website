@@ -14,8 +14,12 @@ html{
     scroll-behavior: smooth;
 }
 
+svg{
+    height: 1.5rem;
+}
+
 body{
-    background-image: url("/frontend/Sources/bg.jpg");
+    background-image: url("../Sources/bg.jpg");
     background-size: cover;
     font-family: "alata";
 }
@@ -199,6 +203,12 @@ body{
 
 .contact-box p{
     color: #fff;
+}
+
+.mail-container{
+    padding-top: 3rem;
+    text-align: center;
+    color: rgb(67, 67, 67);
 }
 
 .footer-container{

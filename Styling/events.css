@@ -1,0 +1,84 @@
+::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+    background: #999; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #777; 
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "alata";
+    background-image: url("../Sources/bg.jpg");
+    background-size: cover;
+    color: rgb(67, 67, 67);
+}
+
+svg{
+    height: 1rem;
+}
+
+.event-header{
+    text-align: center;
+}
+
+.events-container{
+    display: flex;
+    justify-content: center;
+    padding: 0 3rem;
+}
+
+.event-image-container img{
+    width: 30rem;
+    height: auto;
+}
+
+.event-information-container{
+    text-align: center;
+    line-height: 2.5rem;
+    padding: 0rem 5rem; 
+    padding-top: 4rem;
+}
+
+.event-information-container a{
+    text-decoration: none;
+}
+
+.red-line{
+    color: red;
+    padding: 1rem 0;
+}
+
+.register-button-container{
+    padding-top: 1rem;
+}
+
+.register-button{
+    font-size: 1rem;
+    font-weight: 500;
+    background-color:rgb(67, 67, 67);
+    color: white;   
+    border: solid;
+    text-decoration: none;
+    padding: 0.6rem 1rem;
+    border-radius: 0.3rem;
+}
+
+.register-button:hover{
+    opacity: 0.9;
+}
+.footer-container{
+    text-align: center;
+    padding-top: 3rem;   
+}
+
+.footer-container p{
+    color: rgb(67, 67, 67);
+}
