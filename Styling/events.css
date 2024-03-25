@@ -25,39 +25,25 @@ svg{
     height: 1rem;
 }
 
-.event-header{
-    text-align: center;
-}
-
 .events-container{
     display: flex;
     justify-content: center;
-    padding: 0 3rem;
+    padding-top: 2%;
 }
 
-.event-image-container img{
-    width: 30rem;
+.event-image img{
+    width: 28rem;
     height: auto;
 }
 
-.event-information-container{
+.information-container{
+    line-height: 300%;
+    padding: 0 3%;
     text-align: center;
-    line-height: 2.5rem;
-    padding: 0rem 5rem; 
-    padding-top: 4rem;
-}
-
-.event-information-container a{
-    text-decoration: none;
-}
-
-.red-line{
-    color: red;
-    padding: 1rem 0;
 }
 
 .register-button-container{
-    padding-top: 1rem;
+    text-align: center;
 }
 
 .register-button{
