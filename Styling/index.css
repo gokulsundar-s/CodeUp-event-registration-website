@@ -219,10 +219,3 @@ body{
 .footer-container p{
     color: rgb(67, 67, 67);
 }
-
-@media screen and (max-width: 1020px){
-    .contact-box-container{
-        justify-content: center;
-        flex-direction: column;
-    }
-}

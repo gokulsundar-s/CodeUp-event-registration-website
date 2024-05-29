@@ -19,52 +19,56 @@ body{
     background-image: url("../Sources/bg.jpg");
     background-size: cover;
     color: rgb(67, 67, 67);
-}
-
-svg{
-    height: 1rem;
+    text-align: center;
 }
 
 .events-container{
     display: flex;
-    justify-content: center;
-    padding-top: 2%;
+    justify-content: space-around;
+    padding: 2% 0;
+    margin: 0 2%;
 }
 
-.event-image img{
-    width: 28rem;
+.event-left-container img{
+    width: 60%;
     height: auto;
 }
 
-.information-container{
-    line-height: 300%;
-    padding: 0 3%;
-    text-align: center;
-}
-
-.register-button-container{
-    text-align: center;
-}
-
-.register-button{
-    font-size: 1rem;
-    font-weight: 500;
-    background-color:rgb(67, 67, 67);
-    color: white;   
-    border: solid;
+.event-left-container a{
     text-decoration: none;
-    padding: 0.6rem 1rem;
-    border-radius: 0.3rem;
 }
 
-.register-button:hover{
-    opacity: 0.9;
+.event-right-container{
+    background-color: #ffffff2b;
+    border: #cccccc75 solid 0.1rem;
+    padding: 2% 10%;
+    border-radius: 1rem;
 }
-.footer-container{
+
+.event-right-container p {
+    padding-top: 2rem;
+} 
+
+.event-input-container input{
+    width: 20rem;
     text-align: center;
-    padding-top: 3rem;   
+    padding: 0.7rem 0.5rem;
+    margin: 0.8rem 0;
+    border-radius: 0.3rem;
+    border: #CCC solid 0.1rem;
 }
 
-.footer-container p{
-    color: rgb(67, 67, 67);
+.event-button-container button{
+    margin: 2rem 0;
+    padding: 0.7rem 2%;
+    border-radius: 0.3rem;
+    border: none;
+    color: #f1f1f1;
+    background-color: rgb(67, 67, 67);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.event-button-container button:hover{
+    opacity: 0.9;
 }
