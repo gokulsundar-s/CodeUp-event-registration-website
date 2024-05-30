@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Archivo' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Alata' rel='stylesheet'> 
+    <title>Codeup 2K24</title>
+    <link rel="icon" type="image/x-icon" href="../Sources/CCC-Logo.png">
+    <link rel="stylesheet" href="../Styling/index.css">
+</head>
+
+<script>
+    var countDownDate = new Date("Jan 01 , 2024 08:45:00").getTime();
+    var x = setInterval(function() {
+    
+      var now = new Date().getTime();
+      var distance = countDownDate - now;
+    
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var secs = Math.floor((distance % (1000 * 60)) / 1000);
+    
+      document.getElementById("days").innerHTML = days;
+      document.getElementById("hours").innerHTML = hours;
+      document.getElementById("mins").innerHTML = mins;
+      document.getElementById("secs").innerHTML = secs;
+
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("days").innerHTML = 0;
+      document.getElementById("hours").innerHTML = 0;
+      document.getElementById("mins").innerHTML = 0;
+      document.getElementById("secs").innerHTML = 0;
+      }
+    }, 1000);
+</script>
+
+<body>
+    <div class = "navbar-container" id = "homediv">
+        <a href="#" class = "navbar-logo"><img src="../Sources/CCC-Logo.png" alt="logo"></a>
+        <div>
+            <ul class = "navbar-list">
+                <li><button onClick="document.getElementById('homediv').scrollIntoView();">Home</button></li>
+                <li><button onClick="document.getElementById('aboutdiv').scrollIntoView();">About</button></li>
+                <li><button onClick="document.getElementById('eventsdiv').scrollIntoView();">Events</button></li>
+                <li><button onClick="document.getElementById('contactdiv').scrollIntoView();">Contact</button></li>
+                <li><button onClick="document.getElementById('eventsdiv').scrollIntoView();">Register Now</button></li>
+  
+            </ul>
+        </div>
+    </div>
+    
+    <div class = "home-container">
+        <div class = "home-intro-container">
+            <h1 class = "home-header">CSE CODING CLUB</h1>
+            <p class = "home-para">Proudly presents</p>
+        </div> 
+        
+        <div class = "home-logo-container">
+            <img src="../Sources/logo.png" alt="logo" class = "home-logo">
+            <p class = "home-event-date">On 01 January 2024</p>
+            <p class = "home-exclusive-content">Exclusively for 2nd Years</p>
+        </div>
+
+        <div class = "home-time-container">
+            <div class = "time-box">
+                <p id = "days" class = "disp-time"></p>
+                <p class = "disp-info">Days</p>
+            </div>
+            <div class = "time-box">
+                <p id = "hours" class = "disp-time"></p>
+                <p class = "disp-info">Hours</p>
+            </div>
+            <div  class = "time-box">
+                <p id = "mins" class = "disp-time"></p>
+                <p class = "disp-info">Minutes</p>
+            </div>
+            <div  class = "time-box">
+                <p id = "secs" class = "disp-time"></p>
+                <p class = "disp-info">Seconds</p>
+            </div>
+        </div>
+    </div>
+
+    <div class = "about-container">
+        <p class = "page-header" id = "aboutdiv">About Codeup</p>
+        <p class = "about-content">
+            CSE Coding Club proudly presents CodeUp, an exhilarating full-day event tailored exclusively for second-year students. Set to ignite the passion for coding and innovation, CodeUp promises a day filled with excitement, challenges, and opportunities to showcase coding prowess. CodeUp comprises four engaging events designed to push the boundaries of participants' coding skills and foster creativity in problem-solving. CodeUp isn't just about competition; it's also an excellent opportunity for networking, learning, and collaboration. Throughout the day, participants will interact with peers, mentors, and industry professionals, gaining valuable insights and forging lasting connections. So, gear up, second-year students, for a day packed with coding challenges, learning experiences, and the chance to showcase your coding prowess at CodeUp, brought to you by the CSE Coding Club.
+        </p>
+    </div>
+
+    <div class = "events-container">
+        <p class = "page-header" id = "eventsdiv">Events</p>
+        <p class = "page-content">
+            Let's code up and conquer together!
+        </p>
+        <div class = "events-box-container">
+            <a href="code_confetti.html">
+                <div class = "events-box">
+                    <p>Code Confetti</p>
+                    <p>08:45 AM to 11:00 AM</p>
+                    <img src = "../Sources/arrows.png" alt = "arrow" class = "arrow-image">
+                </div>
+            </a>
+            <a href="code_craft.html">
+                <div class = "events-box">
+                    <p>Code Craft</p>
+                    <p>11:25 AM to 12:25 PM</p>
+                    <img src = "../Sources/arrows.png" alt = "arrow" class = "arrow-image">
+                </div>
+            </a>
+            <a href="developnet.html">
+                <div class = "events-box">
+                    <p>Developnet</p>
+                    <p>01:30 PM to 04:15 PM</p>
+                    <img src = "../Sources/arrows.png" alt = "arrow" class = "arrow-image">
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class = "contact-container">
+        <p class = "page-header" id = "contactdiv">Contact</p>
+        <p class = "page-content">
+            For any queries, feel free to reach out to us
+        </p>
+
+        <div class = "contact-box-container">
+            <div class = "contact-box">
+                <p>Name</p>
+                <p>Position</p>
+                <p>+91 xxxxx xxxxx</p>
+            </div>
+            <div class = "contact-box">
+                <p>Name</p>
+                <p>Position</p>
+                <p>+91 xxxxx xxxxx</p>
+            </div>
+            <div class = "contact-box">
+                <p>Name</p>
+                <p>Position</p>
+                <p>+91 xxxxx xxxxx</p>
+            </div>
+            <div class = "contact-box">
+                <p>Name</p>
+                <p>Position</p>
+                <p>+91 xxxxx xxxxx</p>
+            </div>
+        </div>
+
+        <div class = "mail-container">
+            <p><i style="font-size: 1.2rem" class="fa">&#xf003;</i> keccsecodeclub@kongu.edu</p>
+        </div>
+
+        <div class = "footer-container">
+            <p>&#169; All rights reserved | CSE Coding Club</p>
+        </div>
+    </div>
+</body>
