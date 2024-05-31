@@ -22,27 +22,42 @@
         
         <div class="event-right-container">
             <h3>Register Now</h3>
-            <form>
-                <div class = "event-input-container">
-                    <input type="text" placeholder="Full Name">
+            <form action="/code_craft" method="post">
+                <div class="event-input-container">
+                    <input type="text" placeholder="Full Name" id="name" name="name" required>
                 </div>
-                <div class = "event-input-container">
-                    <input type="text" placeholder="Roll Number">
+                
+                <div class="event-input-container">
+                    <input type="text" placeholder="Roll Number" id="roll" name="roll" required>
                 </div>
-                <div class = "event-input-container">
-                    <input type="text" placeholder="Year">
+                
+                <div class="event-input-container">
+                    <select type="text" placeholder="Year" id="year" name="year" required>
+                        <option>Year</option>
+                        <option>II</option>
+                    </select>
                 </div>
-                <div class = "event-input-container">
-                    <input type="text" placeholder="Section">
+                
+                <div class="event-input-container">
+                    <select type="text" placeholder="Section" id="section" name="section" required>
+                        <option>Section</option>
+                        <option>A</option>
+                        <option>B</option>
+                        <option>C</option>
+                        <option>D</option>
+                    </select>
                 </div>
-                <div class = "event-input-container">
-                    <input type="mail" placeholder="Kongu Mail">
+                
+                <div class="event-input-container">
+                    <input type="email" placeholder="Kongu Mail" id="email" name="email" required>
                 </div>
-                <div class = "event-input-container">
-                    <input type="tele" placeholder="Phone Number">
+                
+                <div class="event-input-container">
+                    <input type="tel" placeholder="Phone Number" id="phone" name="phone" pattern="[0-9]{10}" required>
                 </div>
-                <div class = "event-button-container">
-                    <button type="submit">Register</button>
+                
+                <div class="event-button-container">
+                    <input type="submit" value="Submit">
                 </div>
             </form>
         </div>
