@@ -1,0 +1,68 @@
+body{
+    font-family: "alata";
+    background-image: url("../Sources/bg.jpg");
+    background-size: cover;
+    color: rgb(67, 67, 67);
+    text-align: center;
+}
+
+.events-container{
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff2b;
+    border: #cccccc75 solid 0.1rem;
+    border-radius: 1rem;
+    margin: 2% 5%;
+    padding-top: 2rem;
+}
+
+.events-name p, .events-count p{
+    padding-bottom: 2rem;
+}
+
+.events-input input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.5rem;
+    margin-left: 3.5rem;
+}
+
+.events-button input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5rem;
+    margin-left: 2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    border: none;
+    color: #f1f1f1;
+    background-color: rgb(67, 67, 67);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.events-button input:hover{
+    opacity: 0.9;
+}
+
+.server-buttons-container input{
+    margin: 1rem 3rem;
+    padding: 0.7rem 1rem;
+    border-radius: 0.3rem;
+    border: none;
+    color: #f1f1f1; 
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.server-buttons-container input:hover{
+    opacity: 0.9;
+}
+
+.server-save-button{
+    background-color: rgb(67, 67, 67);
+}
+
+.server-logout-button{
+    background-color: rgb(255, 81, 81);
+}
