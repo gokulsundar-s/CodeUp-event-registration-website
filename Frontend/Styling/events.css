@@ -22,74 +22,30 @@ body{
     text-align: center;
 }
 
-.events-container{
-    display: flex;
-    justify-content: space-around;
-    padding: 1% 0;
-    margin: 0 2%;
-}
-
-.event-left-container img{
-    width: 60%;
+img{
+    width: 20rem;
     height: auto;
 }
 
-.event-left-container a{
+a{
     text-decoration: none;
+    padding-top: 2rem;
 }
 
-.event-right-container{
-    background-color: #ffffff2b;
-    border: #cccccc75 solid 0.1rem;
-    padding: 2% 10%;
-    border-radius: 1rem;
+.event-content{
+    padding: 0 20%;
+    line-height: 2rem;
 }
 
-.event-right-container p {
-    padding-top: 0rem;
-} 
-
-.event-input-container input{
-    width: 20rem;
-    text-align: center;
-    padding: 0.7rem 0.5rem;
-    margin: 0.8rem 0;
-    border-radius: 0.3rem;
-    border: #CCC solid 0.1rem;
-}
-
-.event-input-container select{
-    width: 21rem;
-    text-align: center;
-    padding: 0.7rem 0.5rem;
-    margin: 0.8rem 0;
-    border-radius: 0.3rem;
-    border: #CCC solid 0.1rem;
-}
-
-.event-button-container input{
-    margin-top: 1rem;
-    padding: 0.7rem 2rem;
-    border-radius: 0.3rem;
-    border: none;
-    color: #f1f1f1;
-    background-color: rgb(67, 67, 67);
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.event-button-container input:hover{
-    opacity: 0.9;
-}
-
-@media screen and (max-width: 800px){
-    .events-container{
-        flex-direction: column;
-    } 
-    .event-input-container input{
-        width: 90%;
+@media (max-width: 760px) {
+    img{
+        width: 18rem;
     }
-    .event-input-container select{
-        width:95%;
+    .event-name{
+        font-size: 1.5rem;
+    }
+    .event-content{
+        line-height: 1.75rem;
+        padding: 0 2%;
     }
 }
