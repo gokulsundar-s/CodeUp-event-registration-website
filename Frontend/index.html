@@ -35,6 +35,31 @@
       document.getElementById("secs").innerHTML = 0;
       }
     }, 1000);
+    
+    var countDownDate2 = new Date("Oct 23, 2024 08:45:00").getTime();
+    var x2 = setInterval(function() {
+    
+      var now2 = new Date().getTime();
+      var distance2 = countDownDate2 - now2;
+    
+      var days2 = Math.floor(distance2 / (1000 * 60 * 60 * 24));
+      var hours2 = Math.floor((distance2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var mins2 = Math.floor((distance2 % (1000 * 60 * 60)) / (1000 * 60));
+      var secs2 = Math.floor((distance2 % (1000 * 60)) / 1000);
+    
+      document.getElementById("days2").innerHTML = days2;
+      document.getElementById("hours2").innerHTML = hours2;
+      document.getElementById("mins2").innerHTML = mins2;
+      document.getElementById("secs2").innerHTML = secs2;
+
+      if (distance2 < 0) {
+        clearInterval(x2);
+        document.getElementById("days2").innerHTML = 0;
+      document.getElementById("hours2").innerHTML = 0;
+      document.getElementById("mins2").innerHTML = 0;
+      document.getElementById("secs2").innerHTML = 0;
+      }
+    }, 1000);
 
     function toggleMenu() {
         var navbarList = document.getElementById("navbar-list");
@@ -69,7 +94,7 @@
         <div class = "home-logo-container">
             <img src="./Sources/CodeFest.png" alt="logo" class = "home-logo">
             <p class = "home-event-date">On 19 October 2024</p>
-            <p class = "home-exclusive-content">Exclusively for 2nd Years and 3rd Years</p>
+            <p class = "home-exclusive-content">Exclusively for 3rd Years</p>
         </div>
 
         <div class = "home-time-container">
@@ -90,6 +115,29 @@
                 <p class = "disp-info">Seconds</p>
             </div>
         </div>
+        
+        <div class = "home-logo-container">
+            <p class = "home-event-date">On 23 October 2024</p>
+            <p class = "home-exclusive-content">Exclusively for 2nd Years</p>
+        </div>
+
+        <div class="home-time-container">
+            <div class="time-box">
+                <p id="days2" class="disp-time"></p>
+                <p class="disp-info">Days</p>
+            </div>
+            <div class="time-box">
+                <p id="hours2" class="disp-time"></p>
+                <p class="disp-info">Hours</p>
+            </div>
+            <div class="time-box">
+                <p id="mins2" class="disp-time"></p>
+                <p class="disp-info">Minutes</p>
+            </div>
+            <div class="time-box">
+                <p id="secs2" class="disp-time"></p>
+                <p class="disp-info">Seconds</p>
+            </div>
     </div>
 
     <div class = "about-container">
